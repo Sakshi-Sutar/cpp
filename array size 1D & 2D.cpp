@@ -5,8 +5,8 @@ int main()
 {
 	int arr[]={1, 2, 3, 4, 5, 6, 7};
 
-	int size=sizeof(arr)/sizeof(arr[0]);			//such array size calculation is not possible when array is passed to a function since array is 
-	cout<<size<<endl<<endl;							//passed as a pointer not as an array so information about size is lost
+	int size=sizeof(arr)/sizeof(arr[0]);				//such array size calculation is not possible when array is passed to a function since array is 
+	cout<<size<<endl<<endl;						//passed as a pointer not as an array so information about size is lost
 
 
 
