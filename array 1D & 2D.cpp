@@ -3,28 +3,28 @@ using namespace std;
 
 int main()
 {
-	int a1[5]={};											//1
+	int a1[5]={};								//1
 
 	for(int i=0; i<5; i++)
 		cout<<a1[i]<<" ";
 
 	cout<<endl<<endl;
 
-	int a2[5]={1};											//2
+	int a2[5]={1};								//2
 
 	for(int i=0; i<5; i++)
 		cout<<a2[i]<<" ";
 
 	cout<<endl<<endl;
 
-	int a3[5]={1, 2};										//3
+	int a3[5]={1, 2};							//3
 
 	for(int i=0; i<5; i++)
 		cout<<a3[i]<<" ";
 
 	cout<<endl<<endl;
 
-	int a4[5]={1, 2, 3, 4, 5};								//4
+	int a4[5]={1, 2, 3, 4, 5};						//4
 
 	for(int i=0; i<5; i++)
 		cout<<a4[i]<<" ";
@@ -34,7 +34,7 @@ int main()
 
 
 
-	int arr1[3][3]={};										//1
+	int arr1[3][3]={};							//1
 
 	for(int i=0; i<3; i++)
 	{
@@ -46,7 +46,7 @@ int main()
 
 	cout<<endl;
 
-	int arr2[3][3]={1};										//2
+	int arr2[3][3]={1};							//2
 
 	for(int i=0; i<3; i++)
 	{
@@ -58,7 +58,7 @@ int main()
 
 	cout<<endl;
 
-	int arr3[3][3]={1, 2, 3, 4};							//3
+	int arr3[3][3]={1, 2, 3, 4};						//3
 
 	for(int i=0; i<3; i++)
 	{
