@@ -82,7 +82,7 @@ void reverse(list<int> l)
 
 void sort(list<int> l)
 {
-	l.sort();													//l.sort(greater<int>()) for descending order
+	l.sort();														//l.sort(greater<int>()) for descending order
 	cout<<endl<<"Sort: ";
 	for(auto i: l)
 		cout<<i<<" ";
