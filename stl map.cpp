@@ -1,10 +1,10 @@
 #include<iostream>
-#include<map>							//internally implemented using self-balancing tree
+#include<map>					//internally implemented using self-balancing tree
 using namespace std;
 
 int main()
 {
-	map<int, int> m {{2, 30}, {1, 40}, {3, 60}};        //map<int, int, greater<int>> m; for descending order
+	map<int, int> m {{2, 30}, {1, 40}, {3, 60}};		//map<int, int, greater<int>> m; for descending order
 
 	m.insert({7, 10});
 	m.insert({4, 20});
@@ -14,8 +14,8 @@ int main()
 	cout<<"Size: "<<m.size()<<endl;
 
 	cout<<endl<<"Key     ";
-	for(auto i=m.begin(); i!=m.end(); i++)				//i<m.end() doesn't work
-		cout<<i->first<<"   ";							//use -> operator with pointers
+	for(auto i=m.begin(); i!=m.end(); i++)			//i<m.end() doesn't work
+		cout<<i->first<<"   ";				//use -> operator with pointers
 
 	cout<<endl<<"Value   ";
 	for(auto i=m.begin(); i!=m.end(); i++)
@@ -23,7 +23,7 @@ int main()
 
 	cout<<endl<<"Key     ";
 	for(auto i: m)
-		cout<<i.first<<"   ";							//use . operator since it is non-pointer
+		cout<<i.first<<"   ";				//use . operator since it is non-pointer
 
 	cout<<endl<<"Value   ";
 	for(auto i: m)
@@ -66,7 +66,7 @@ int main()
 
 
 
-	map<int, int> m2(m);								//map<int, int, greater<int>> m2(m); for descending order
+	map<int, int> m2(m);					//map<int, int, greater<int>> m2(m); for descending order
 
 	cout<<endl<<endl<<"Copy of m in m2";
 	cout<<endl<<"Key     ";
