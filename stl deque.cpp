@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	deque<int> dq;											//similar initialization like vector and list possible; dq(5), dq(5, 3), dq {1, 2, 3}
+	deque<int> dq;							//similar initialization like vector and list possible; dq(5), dq(5, 3), dq {1, 2, 3}
 
 	deque<int>::iterator itr;
 
