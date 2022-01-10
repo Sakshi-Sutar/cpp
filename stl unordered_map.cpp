@@ -1,5 +1,5 @@
 #include<iostream>
-#include<unordered_map>						//internally implemented using hash table
+#include<unordered_map>				//internally implemented using hash table
 using namespace std;
 
 int main()
@@ -16,8 +16,8 @@ int main()
 	cout<<"Size: "<<u.size()<<endl;
 
 	cout<<endl<<"Key     ";
-	for(auto i=u.begin(); i!=u.end(); i++)				//i<u.end() doesn't work
-		cout<<i->first<<"   ";							//use -> operator with pointers
+	for(auto i=u.begin(); i!=u.end(); i++)			//i<u.end() doesn't work
+		cout<<i->first<<"   ";				//use -> operator with pointers
 
 	cout<<endl<<"Value   ";
 	for(auto i=u.begin(); i!=u.end(); i++)
@@ -25,7 +25,7 @@ int main()
 
 	cout<<endl<<"Key     ";
 	for(auto i: u)
-		cout<<i.first<<"   ";							//use . operator since it is non-pointer
+		cout<<i.first<<"   ";				//use . operator since it is non-pointer
 
 	cout<<endl<<"Value   ";
 	for(auto i: u)
