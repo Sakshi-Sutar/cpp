@@ -1,5 +1,5 @@
 #include<iostream>
-#include<list>												//doubly linked list
+#include<list>								//doubly linked list
 #include<algorithm>
 using namespace std;
 
@@ -9,7 +9,7 @@ void display(list<int> l, list<int>::iterator itr)
 		cout<<i<<" ";
 	cout<<endl;
 
-	for(auto i=l.begin(); i!=l.end(); i++)					//i<l.end() doesn't work in case of list
+	for(auto i=l.begin(); i!=l.end(); i++)				//i<l.end() doesn't work in case of list
 		cout<<*i<<" ";
 	cout<<endl;
 
@@ -65,7 +65,7 @@ void insert_delete(list<int> l, list<int>::iterator itr)
 
 void search(list<int> l, list<int>::iterator itr)
 {
-	itr=find(l.begin(), l.end(), 5);									//<algorithm> for find()
+	itr=find(l.begin(), l.end(), 5);				//<algorithm> for find()
 	if(itr!=l.end()) cout<<endl<<"Search 5: Found";
 	itr=find(l.begin(), l.end(), 9);
 	if(itr==l.end()) cout<<endl<<"Search 9: Not Found"<<endl;
@@ -82,7 +82,7 @@ void reverse(list<int> l)
 
 void sort(list<int> l)
 {
-	l.sort();														//l.sort(greater<int>()) for descending order
+	l.sort();							//l.sort(greater<int>()) for descending order
 	cout<<endl<<"Sort: ";
 	for(auto i: l)
 		cout<<i<<" ";
@@ -91,7 +91,7 @@ void sort(list<int> l)
 
 void fill(list<int> l)
 {
-	l.assign(l.size(), 5);										//fills array with specified value (no. of time, value)
+	l.assign(l.size(), 5);						//fills array with specified value (no. of time, value)
 	cout<<endl<<"Assign function: ";
 	for(auto i: l)
 		cout<<i<<" ";
@@ -107,7 +107,7 @@ void merge(list<int> l1, list<int> l2)
 	for(auto i: l2)
 		cout<<i<<" ";
 
-	l1.merge(l2);												//takes 2 sorted list and creates new sorted list by merging them
+	l1.merge(l2);							//takes 2 sorted list and creates new sorted list by merging them
 	cout<<endl<<"Merged: ";
 	for(auto i: l1)
 		cout<<i<<" ";
@@ -118,11 +118,11 @@ int main()
 {
 	list<int> l {0, 1, 2, 3}, l1 {2, 3, 5}, l2 {1, 4, 6};		//can be initialized like this; if only size specified initialized to zero; l(size, val)
 
-	l.push_back(4);												//or declare then push values like this
+	l.push_back(4);							//or declare then push values like this
 	l.push_back(5);
 	l.push_back(6);
 
-	list<int>::iterator itr;									//only ++ and -- works, (itr-1) doesn't: only applicable for list (works with vectors)
+	list<int>::iterator itr;					//only ++ and -- works, (itr-1) doesn't: only applicable for list (works with vectors)
 	
 	display(l, itr);
 	insert_delete(l, itr);
