@@ -9,7 +9,7 @@ int main()
 	u.insert({3, 1});
 	u.insert(7);
 	u.insert(6);
-	u.insert(7);										//only one 7 will be added
+	u.insert(7);							//only one 7 will be added
 
 	cout<<"Size: "<<u.size()<<endl<<endl;
 
