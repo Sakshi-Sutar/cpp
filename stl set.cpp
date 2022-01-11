@@ -1,15 +1,15 @@
 #include<iostream>
-#include<set>							//internally implemented using self-balancing tree
+#include<set>					//internally implemented using self-balancing tree
 using namespace std;
 
 int main()
 {
-	set<int> s {2, 5, 4};								//set<int, greater<int>> s; for descending order
+	set<int> s {2, 5, 4};						//set<int, greater<int>> s; for descending order
 
 	s.insert({3, 1});
 	s.insert(7);
 	s.insert(6);
-	s.insert(7);										//only one 7 will be added
+	s.insert(7);							//only one 7 will be added
 
 	cout<<"Size: "<<s.size()<<endl<<endl;
 
