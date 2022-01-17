@@ -14,15 +14,15 @@ int main()
 
 	int a[10] {}, arr[3][5] {};
 
-	fill_n(a+2, 10, 3);											/* similarly for vectors: fill_n(v.begin()+itr, v.size(), 3) */
+	fill_n(a+2, 10, 3);							/* similarly for vectors: fill_n(v.begin()+itr, v.size(), 3) */
 
 	for(int i=0; i<10; i++)
 		cout<<a[i]<<" ";
 	cout<<endl<<endl;
 
-	fill_n(&**arr+6, 15, 8);									/* fill_n(&arr[0][0], sizeof(arr)/sizeof(**arr), 8) or */
+	fill_n(&**arr+6, 15, 8);						/* fill_n(&arr[0][0], sizeof(arr)/sizeof(**arr), 8) or */
 
-	for(int i=0; i<3; i++)										/* fill_n(&arr[0][0], sizeof(arr)/sizeof(arr[0][0]), 8) */				
+	for(int i=0; i<3; i++)							/* fill_n(&arr[0][0], sizeof(arr)/sizeof(arr[0][0]), 8) */				
 	{
 		for(int j=0; j<5; j++)
 			cout<<arr[i][j]<<" ";
@@ -38,7 +38,7 @@ int main()
 	swap(x, y);
 	cout<<endl<<"x="<<x<<", y="<<y<<endl;
 
-	cout<<endl<<sqrt(25)<<endl;									//<cmath>
+	cout<<endl<<sqrt(25)<<endl;						//<cmath>
 
 	return 0;
 }
