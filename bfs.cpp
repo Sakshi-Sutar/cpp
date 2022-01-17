@@ -66,7 +66,7 @@ node* create()
 	cout<<endl<<"Enter right child of "<<x;
 	temp->right=create();
 
-	return temp;												//works even without this return statement (how?)
+	return temp;						//works even without this return statement (how?)
 }
 
 void bfs(node *root)
